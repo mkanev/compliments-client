@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'kelson_sans_rubold';
+    src: url("#{resource['font/kelson/kelson_sans_bold_ru.eot']}");
+    src: url("#{resource['font/kelson/kelson_sans_bold_ru.eot']}?#iefix") format('embedded-opentype'), url("#{resource['font/kelson/kelson_sans_bold_ru.woff']}") format('woff'), url("#{resource['font/kelson/kelson_sans_bold_ru.ttf']}") format('truetype');
+}
+
+@font-face {
+    font-family: 'kelson_sans_rulight';
+    src: url("#{resource['font/kelson/kelson_sans_light_ru.eot']}");
+    src: url("#{resource['font/kelson/kelson_sans_light_ru.eot']}?#iefix") format('embedded-opentype'), url("#{resource['font/kelson/kelson_sans_light_ru.woff']}") format('woff'), url("#{resource['font/kelson/kelson_sans_light_ru.ttf']}") format('truetype');
+}
+
+@font-face {
+    font-family: 'kelson_sans_ruregular';
+    src: url("#{resource['font/kelson/kelson_sans_regular_ru.eot']}");
+    src: url("#{resource['font/kelson/kelson_sans_regular_ru.eot']}?#iefix") format('embedded-opentype'), url("#{resource['font/kelson/kelson_sans_regular_ru.woff']}") format('woff'), url("#{resource['font/kelson/kelson_sans_regular_ru.ttf']}") format('truetype');
+}

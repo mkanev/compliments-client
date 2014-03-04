@@ -1,0 +1,29 @@
+/* app css stylesheet */
+
+/*@font-face {
+    font-family: 'kelson_sans_rubold';
+    src: url('../fonts/kelson/kelson_sans_bold_ru.eot');
+    src: url('../fonts/kelson/kelson_sans_bold_ru.eot?#iefix') format('embedded-opentype'), url('../fonts/kelson/kelson_sans_bold_ru.woff') format('woff'), url('../fonts/kelson/kelson_sans_bold_ru.ttf') format('truetype');
+}*/
+@font-face {
+    font-family: 'kelson_sans_rulight';
+    src: url('../fonts/kelson/kelson_sans_light_ru.ttf');
+}
+/*@font-face {
+    font-family: 'kelson_sans_ruregular';
+    src: url('../fonts/kelson/kelson_sans_regular_ru.eot');
+    src: url('../fonts/kelson/kelson_sans_regular_ru.eot?#iefix') format('embedded-opentype'), url('../fonts/kelson/kelson_sans_regular_ru.woff') format('woff'), url('../fonts/kelson/kelson_sans_regular_ru.ttf') format('truetype');
+}*/
+
+html,
+body,
+.bar {
+    background-color: #FC0FC0;
+    color: #f8f8f8;
+}
+
+.compliment {
+    font-family: kelson_sans_rulight, "Helvetica Neue", Arial, "Liberation Sans", FreeSans, sans-serif;
+    font-size: 3em;
+    line-height: 1.1em;
+}
