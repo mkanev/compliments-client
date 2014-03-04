@@ -8,6 +8,9 @@ angular.module('myApp.controllers', [])
                   navigate: 'next',
                   limit: 1
                 };
+                $scope.entities = [
+                  {content: 'Потяните вниз, чтобы обновить'}
+                ];
                 $scope.fetchResult = function () {
                   return API.compliment.getRecords($scope.criteria).then(function (data) {
                     $scope.entities = data;
@@ -15,8 +18,7 @@ angular.module('myApp.controllers', [])
                     console.log("Error with status code", response.status);
                   });
                 };
-                $scope.fetchResult();
-                $scope.onRefresh = function() {
+                $scope.onRefresh = function () {
                   $scope.fetchResult();
                   $scope.$broadcast('scroll.refreshComplete');
                 }

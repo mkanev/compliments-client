@@ -7,7 +7,7 @@
 }*/
 @font-face {
     font-family: 'kelson_sans_rulight';
-    src: url('../fonts/kelson/kelson_sans_light_ru.ttf');
+    src: url('/www/fonts/kelson/kelson_sans_light_ru.ttf');
 }
 /*@font-face {
     font-family: 'kelson_sans_ruregular';
@@ -18,12 +18,24 @@
 html,
 body,
 .bar {
-    background-color: #FC0FC0;
+    /*background-color: #dd5c79;*/
     color: #f8f8f8;
+    font-family: kelson_sans_rulight, "Helvetica Neue", Arial, "Liberation Sans", FreeSans, sans-serif;
+    background: #d65973; /* Old browsers */
+    /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CiAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjZDY1OTczIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iNDUlIiBzdG9wLWNvbG9yPSIjZGU3MzlhIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iNTMlIiBzdG9wLWNvbG9yPSIjZGU3MzlhIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2MxM2M4YiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+    background: -moz-linear-gradient(-45deg,  #d65973 0%, #de739a 45%, #de739a 53%, #c13c8b 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#d65973), color-stop(45%,#de739a), color-stop(53%,#de739a), color-stop(100%,#c13c8b)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(-45deg,  #d65973 0%,#de739a 45%,#de739a 53%,#c13c8b 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(-45deg,  #d65973 0%,#de739a 45%,#de739a 53%,#c13c8b 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(-45deg,  #d65973 0%,#de739a 45%,#de739a 53%,#c13c8b 100%); /* IE10+ */
+    background: linear-gradient(135deg,  #d65973 0%,#de739a 45%,#de739a 53%,#c13c8b 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d65973', endColorstr='#c13c8b',GradientType=1 ); /* IE6-8 fallback on horizontal gradient */
+
+
 }
 
 .compliment {
-    font-family: kelson_sans_rulight, "Helvetica Neue", Arial, "Liberation Sans", FreeSans, sans-serif;
     font-size: 3em;
     line-height: 1.1em;
 }
