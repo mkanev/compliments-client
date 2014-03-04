@@ -16,6 +16,7 @@ D:\workspace\java\projects\march8\modules\client\platforms\android\assets\www\co
 D:\workspace\java\projects\march8\modules\client\platforms\android\assets\www\cordova.js \
 D:\workspace\java\projects\march8\modules\client\platforms\android\assets\www\cordova_plugins.js \
 D:\workspace\java\projects\march8\modules\client\platforms\android\assets\www\css \
+D:\workspace\java\projects\march8\modules\client\platforms\android\assets\www\error.html \
 D:\workspace\java\projects\march8\modules\client\platforms\android\assets\www\fonts \
 D:\workspace\java\projects\march8\modules\client\platforms\android\assets\www\icon.png \
 D:\workspace\java\projects\march8\modules\client\platforms\android\assets\www\img \

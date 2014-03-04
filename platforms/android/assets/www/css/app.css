@@ -7,7 +7,7 @@
 }*/
 @font-face {
     font-family: 'kelson_sans_rulight';
-    src: url('/www/fonts/kelson/kelson_sans_light_ru.ttf');
+    src: url('../fonts/kelson/kelson_sans_light_ru.ttf');
 }
 /*@font-face {
     font-family: 'kelson_sans_ruregular';
@@ -37,5 +37,10 @@ body,
 
 .compliment {
     font-size: 3em;
+    line-height: 1.1em;
+}
+
+.error {
+    font-size: 2em;
     line-height: 1.1em;
 }
