@@ -5,7 +5,7 @@
 angular.module('myApp.controllers', [])
   .controller('HomeCtrl', function ($scope, API) {
                 $scope.criteria = {
-                  navigate: 'next',
+                  page: Math.floor((Math.random() * 1000) + 1),
                   limit: 1
                 };
                 $scope.entities = [
@@ -14,6 +14,7 @@ angular.module('myApp.controllers', [])
                 $scope.fetchResult = function () {
                   return API.compliment.getRecords($scope.criteria).then(function (data) {
                     $scope.entities = data;
+                    $scope.criteria.page = Math.floor(Math.random() * data.entitiesCount);
                   }, function (response) {
                     console.log("Error with status code", response.status);
                   });
