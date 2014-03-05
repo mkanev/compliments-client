@@ -12,9 +12,11 @@
 </head>
 <body ng-controller="HomeCtrl">
 
-<ion-content padding="true" has-footer="true" on-refresh="onRefresh()">
+<ion-content on-refresh="onRefresh()">
 
-  <div style="min-height: 120px; height: 120px;"></div>
+  <div style="min-height: 120px; height: 120px; font-size: 1.25em; text-align: center;">
+    <span ng-show="error">{{error}}</span>
+  </div>
   <ion-refresher></ion-refresher>
   <div class="row responsive-sm" ng-repeat="entity in entities">
     <div class="col" style="text-align: center;">
@@ -22,9 +24,6 @@
     </div>
   </div>
 </ion-content>
-<ion-footer-bar type="bar-clear">
-  <span class="title">С любовью от WaveAccess</span>
-</ion-footer-bar>
 
 <script type="text/javascript" src="phonegap.js"></script>
 <script type="text/javascript" src="js/phoneGapApp.js"></script>

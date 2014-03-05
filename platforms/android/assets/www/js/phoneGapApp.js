@@ -45,7 +45,6 @@ var phoneGapApp = {
   },
   // Update DOM on a Received Event
   receivedEvent: function (id) {
-    console.log('Received Event: ' + id);
     angular.bootstrap(document, ['myApp']);
   }
 };
