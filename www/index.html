@@ -15,10 +15,10 @@
 <ion-content on-refresh="onRefresh()">
 
   <div style="min-height: 120px; height: 120px; font-size: 1.25em; text-align: center;">
-    <span ng-show="error">{{error}}</span>
+    <span ng-show="error" style="padding-top: 20px;">{{error}}</span>
   </div>
   <ion-refresher></ion-refresher>
-  <div class="row responsive-sm" ng-repeat="entity in entities">
+  <div class="row responsive-sm">
     <div class="col" style="text-align: center;">
       <span class="compliment">{{entity.content}}</span>
     </div>

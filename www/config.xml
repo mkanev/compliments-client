@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="com.waveaccess.compliments" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
-    <name>WaCompliments</name>
+    <name>Compliments</name>
     <description>
         Mobile version of compliments generator service
     </description>
@@ -25,6 +25,8 @@
     <preference name="disable-cursor" value="false" />
     <preference name="android-minSdkVersion" value="13" />
     <preference name="android-installLocation" value="auto" />
+    <preference name="SplashScreen" value="splash" />
+    <preference name="SplashScreenDelay" value="5000" />
     <icon src="icon.png" />
     <icon gap:density="ldpi" gap:platform="android" src="res/icon/android/icon-36-ldpi.png" />
     <icon gap:density="mdpi" gap:platform="android" src="res/icon/android/icon-48-mdpi.png" />
