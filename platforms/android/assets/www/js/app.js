@@ -33,4 +33,7 @@ angular.module('myApp', [
                                                     'Referer': 'http://agile-anchorage-3289.herokuapp.com'
                                                   });
           })
+  .run(function(){
+         angular.element(document.body).css('opacity', 1);
+       })
 ;

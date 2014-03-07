@@ -13,6 +13,9 @@
     <feature name="SplashScreen">
         <param name="android-package" value="org.apache.cordova.splashscreen.SplashScreen" />
     </feature>
+    <feature name="sender">
+        <param name="android-package" value="com.waveaccess.compliments.plugin.Sender" />
+    </feature>
     <name>Compliments</name>
     <description>
         Mobile version of compliments generator service
@@ -66,4 +69,7 @@
     <gap:splash gap:platform="winphone" src="res/screen/windows-phone/screen-portrait.jpg" />
     <access origin="http://127.0.0.1*" />
     <access origin="http://agile-anchorage-3289.herokuapp.com*" />
+    <feature name="Device">
+        <param name="android-package" value="org.apache.cordova.device.Device" />
+    </feature>
 </widget>

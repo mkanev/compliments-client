@@ -24,12 +24,11 @@ import com.google.android.gms.ads.AdSize;
 import com.google.android.gms.ads.AdView;
 
 import android.os.Bundle;
-import android.widget.LinearLayout;
 
 import org.apache.cordova.Config;
 import org.apache.cordova.CordovaActivity;
 
-public class WaCompliments extends CordovaActivity {
+public class Compliments extends CordovaActivity {
 
     /**
      * The view to show the ad.
@@ -60,6 +59,7 @@ public class WaCompliments extends CordovaActivity {
         // Create an ad request. Check logcat output for the hashed device ID to
         // get test ads on a physical device.
         AdRequest adRequest = new AdRequest.Builder()
+            .setGender(AdRequest.GENDER_MALE)
             .addTestDevice(AdRequest.DEVICE_ID_EMULATOR)
             .addTestDevice("9591A87932AA4DDF6E6C0E740BFEB9E0")
             .build();
