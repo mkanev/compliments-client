@@ -15,7 +15,7 @@
 <div class="bar bar-header bar-clear">
   <div class="title"></div>
   <a ng-show="sendEnabled" id="sendBtn" href="#" onclick="sendSms(document.getElementById('message').innerHTML);"
-     class="button button-clear button-icon icon ion-ios7-email-outline button-light" style="padding-top: 20px;"></a>
+     class="button button-clear button-icon icon ion-share button-light" style="padding-top: 20px;"></a>
 </div>
 
 <ion-content on-refresh="onRefresh()">
@@ -51,7 +51,7 @@
   function sendSms(text) {
     var btnElement = angular.element(document.getElementById('sendBtn'));
     btnElement.css({'opacity': 0});
-    cordova.exec(null, null, 'sender', 'sms', [text, '']);
+    cordova.exec(null, null, 'sharer', 'share', [text]);
     setTimeout(function () {
       btnElement.css({'opacity': 1});
     }, 1000);

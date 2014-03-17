@@ -13,8 +13,8 @@
     <feature name="SplashScreen">
         <param name="android-package" value="org.apache.cordova.splashscreen.SplashScreen" />
     </feature>
-    <feature name="sender">
-        <param name="android-package" value="com.waveaccess.compliments.plugin.Sender" />
+    <feature name="sharer">
+        <param name="android-package" value="com.waveaccess.compliments.plugin.SharePlugin" />
     </feature>
     <name>Compliments</name>
     <description>
