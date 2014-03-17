@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en" ng-app="myApp">
+<head>
+  <meta charset="utf-8">
+  <meta name="format-detection" content="telephone=no"/>
+  <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+  <!--<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=medium-dpi"/>-->
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width"/>
+  <title>Compliments App</title>
+  <link rel="stylesheet" href="libs/ionic-v0.9.26/css/ionic.min.css"/>
+  <link rel="stylesheet" href="css/app.css"/>
+</head>
+<body ng-controller="HomeCtrl">
+
+<div class="bar bar-header bar-clear">
+  <div class="title"></div>
+  <a ng-show="{{entity}}" href="#" class="button button-clear button-icon icon ion-ios7-email-outline button-light" style="padding-top: 20px;" onclick="sendSms(document.getElementById('message').innerHTML)"></a>
+  
+</div>
+
+<script>
+
+</script>
+
+<ion-content on-refresh="onRefresh()">
+
+  <div style="min-height: 120px; height: 120px; font-size: 1.25em; text-align: center;">
+    <span ng-show="error" style="padding-top: 20px;">{{error}}</span>
+  </div>
+  <ion-refresher></ion-refresher>
+  <div class="row responsive-sm">
+    <div class="col" style="text-align: center;">
+      <span id='message' class="compliment">{{entity.content}}</span>
+    </div>
+  </div>
+</ion-content>
+
+<script type="text/javascript" src="phonegap.js"></script>
+<script type="text/javascript" src="js/phoneGapApp.js"></script>
+<!-- In production use:
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
+-->
+<script src="libs/fastclick-1.0.0/fastclick.js"></script>
+<script src="libs/lodash-2.4.1/lodash.compat.min.js"></script>
+<script src="libs/ionic-v0.9.26/js/ionic.min.js"></script>
+<script src="libs/ionic-v0.9.26/js/ionic.bundle.min.js"></script>
+<script src="libs/restangular-1.3.1/restangular.min.js"></script>
+<script src="js/services.js"></script>
+<script src="js/controllers.js"></script>
+<script src="js/filters.js"></script>
+<script src="js/directives.js"></script>
+<script src="cordova.js"></script>
+<script src="js/app.js"></script>
+<script type="text/javascript">
+  phoneGapApp.initialize();
+</script>
+</body>
+</html>
