@@ -30,8 +30,8 @@ public class SharePlugin extends CordovaPlugin {
         activity.startActivity(Intent.createChooser(sharingIntent, "Share via"));
         EasyTracker.getInstance(activity).send(MapBuilder.createEvent(
             "share",     // Event category (required)
-            "short_message_send",  // Event action (required)
-            "sms_btn",   // Event label
+            "compliment_send",  // Event action (required)
+            "share_btn",   // Event label
             null
         ).build());
         return true;
